@@ -1,0 +1,664 @@
+.girl-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #f7f7f7;
+}
+.top-body-girl-logo{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+.body-girl-logo{
+    padding: 50px 0px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.item-body-girl-logo{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.sub-item-body-girl-logo{
+    width: 25%;
+    font-weight: 600;
+    font-size: 14pt;
+}
+.footer-body-girl-logo{
+    display: flex;
+    background: white;
+}
+.left-logo-girl{
+    width: 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.right-logo-girl{
+    width: 50%;
+}
+.sub-right-logo-girl{
+    height: 100%;
+    padding: 20px 20px 20px 30px;
+}
+.cusnumber{
+    font-size: 57pt;
+}
+.name-logo-girl{
+    font-size: 31pt;
+    padding: 20px 0px;
+}
+.title-logo-girl{
+    font-size: 13pt;
+    padding: 20px 0px;
+}
+.food-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.body-food-logo{
+    width: 90%;
+    padding: 50px 0px;
+}
+.top-body-food-logo{
+    padding: 30px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.item-body-food-logo{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-radius: 25px;
+    box-shadow: 3px 3px #666;
+}
+.name-item-food-logo{
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.cus-sub-item-body-food-logo.one{
+    text-align: center;
+    background: #ff517b;
+}
+.sub-item-body-food-logo{
+    width: 25%;
+}
+.cus-sub-item-body-food-logo{
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 10px;
+    text-align: center;
+}
+.footer-body-food-logo{
+    width: 100%;
+    padding: 50px 20px;
+}
+.top-item-food-img{
+    width: 100%;
+    display: flex;
+}
+.item-img-food{
+    width: 25%;
+}
+.footer-item-food-img{
+    width: 100%;
+    display: flex;
+}
+.feedback{
+    background: url("../../../asset/img/feedback.png");
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.feedback-content{
+    width: 50%;
+    padding: 100px 0px;
+}
+.chil-feedback-content{
+    width: 100%;
+    background: white;
+    
+    display: flex;
+    justify-content: center;
+
+}
+.feedback-man{
+    position: absolute;
+    left: calc(50% - 50px);
+    top:50px;
+}
+.sub-chil-feedback-content{
+    width: 80%;
+    padding: 100px 0px;
+}
+.item-chil-feedback{
+    text-align: center;
+}
+.item-chil-feedback-footer{
+    text-align: center;
+    font-weight: 600;
+    padding: 30px 0px;
+}
+.option-price{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sub-option-price{
+    width: 80%;
+    padding: 100px 0px;
+}
+.name-sub-option-price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.item-option-price{
+    padding: 0px 10px;
+    width: 25%;
+}
+.sub-item-option-price{
+    padding: 20px 20px;
+    width: 100%;
+    border: 1px solid #666;
+    box-shadow: 3px 3px #666;
+    text-align: center;
+}
+.bold{
+    font-weight: 900;
+}
+.blur{
+    padding: 20px 0px;
+    opacity: 0.5;
+}
+.name-bold{
+    padding: 10px 0px;
+    font-size: 17pt;
+}
+.price-bold{
+    padding: 10px 0px;
+    font-size: 30pt; 
+}
+.item-blur{
+    padding: 5px 0px;
+    font-size: 10pt; 
+}
+.information{
+    width: 100%;
+    background: url("../../../asset/img/information.png");
+    display: flex;
+    justify-content: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.sub-information{
+    width: 75.5%;
+}
+.chil-sub-information{
+    padding: 200px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.chil-item-information{
+    width: 25%;
+}
+.text-item-information{
+    font-size: 18pt;
+    font-weight: 900;
+}
+.number-item-information{
+    font-size: 53pt;
+    font-weight: 900;
+}
+.slideshow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.body-slideshow{
+    width: 80%;
+}
+.sub-slideshow{
+    padding: 50px 0px;
+}
+.name-top-slideshow{
+    font-size: 14pt;
+}
+.title-top-slideshow{
+    font-size: 22pt;
+    font-weight: 600;
+}
+.top-slideshow{
+    padding: 20px 0px;
+    text-align: center;
+}
+.footer-slideshow{
+    width: 100%;
+}
+.slideshow-item{
+    padding: 50px 0px;
+    display: flex;
+    text-align: center;
+justify-content: space-around;
+}
+.item-slides{
+    width: 16%;
+}
+.button-footer-option{
+    display: flex;
+    justify-content: center;
+}
+.sub-button-footer-option{
+    width: 60%;
+}
+.button-footer-logo-girl{
+    width: 100%;
+    display: flex;
+}
+.sub-button-footer-logo-girl{
+    display: flex;
+    width: 30%;
+}
+@media (max-width:1824px) {
+    .price-bold{
+        font-size: 25pt;
+    }
+    .text-option-chil{
+        font-size: 10pt;
+    }
+    .title-logo-girl {
+        font-size: 10pt;
+        padding: 20px 0px;
+    }
+    .cusnumber {
+        font-size: 40pt;
+    }
+    .name-logo-girl {
+        font-size: 25pt;
+        padding: 15px 0px;
+    }
+    .sub-item-body-girl-logo {
+        font-size: 13pt;
+    }
+    .feedback-content {
+        width: 60%;
+        padding: 100px 0px;
+    }
+    .item-chil-feedback{
+        font-size: 10pt;
+    }
+    .number-item-information{
+        font-size: 45pt;
+    }
+    .text-item-information {
+        font-size: 15pt;
+    }
+    .title {
+        font-size: 30pt;
+    }
+}
+@media (max-width:1200px) {
+    .price-bold{
+        font-size: 20pt;
+    }
+    .text-option-chil{
+        font-size: 8pt;
+    }
+    .cusnumber {
+        font-size: 30pt;
+    }
+    .name-logo-girl {
+        font-size: 20pt;
+        padding: 10px 0px;
+    }
+    .title-logo-girl{
+        font-size: 8pt;
+        padding: 5px 0px;
+    }
+    .text-button-logo-girl{
+        font-size: 10pt;
+    }
+    .sub-right-logo-girl {
+        height: 100%;
+        padding: 15px 15px 15px 20px;
+    }
+    .sub-item-body-girl-logo {
+        font-size: 10pt;
+    }
+    .cus-sub-item-body-food-logo{
+        font-size: 8pt;
+        width: 100%;
+    }
+    .item-chil-feedback{
+        font-size: 8pt;
+    }
+    .item-chil-feedback-footer{
+        font-size: 10pt;
+    }
+    .number-item-information{
+        font-size: 35pt;
+    }
+    .text-item-information {
+        font-size: 12pt;
+    }
+    .sub-chil-name{
+        font-size: 10pt;
+    }
+    .sub-chil-title{
+        font-size: 10pt;
+    }
+    .title {
+        font-size: 25pt;
+    }
+}
+@media (max-width:992px) {
+    .price-bold{
+        font-size: 15pt;
+    }
+    .name-bold {
+        font-size: 12pt;
+    }
+    .sub-button-footer-option{
+        width: 70%;
+    }
+    .text-option-chil{
+        font-size: 6pt;
+        text-align: center;
+    }
+    .cusnumber {
+        font-size: 20pt;
+    }
+    .name-logo-girl {
+        font-size: 16pt;
+        padding: 5px 0px;
+    }
+    .text-button-logo-girl{
+        font-size: 8pt;
+    }
+    .sub-right-logo-girl {
+        height: 100%;
+        padding: 10px 10px 10px 15px;
+    }
+    .sub-item-body-girl-logo {
+        font-size: 8pt;
+    }
+    .cus-sub-item-body-food-logo{
+        font-size: 6pt;
+    }
+    .item-chil-feedback{
+        font-size: 6pt;
+    }
+    .item-chil-feedback-footer{
+        font-size: 8pt;
+    }
+    .text-size-button-feedback{
+        font-size: 8pt;
+    }
+    .item-chil-feedback-footer{
+        padding: 20px 0px;
+    }
+    .number-item-information{
+        font-size: 30pt;
+    }
+    .text-item-information {
+        font-size: 10pt;
+    }
+    .item-blur{
+        font-size: 8pt;
+    }
+    .name-bold {
+        font-size: 10pt;
+        padding: 5px 0px;
+    }
+    .blur {
+        padding: 10px 0px;
+        opacity: 0.7;
+    }
+    .sub-chil-name{
+        font-size: 8pt;
+    }
+    .sub-chil-title{
+        font-size: 8pt;
+    }
+    .sub-chil-item {
+        padding: 20px 0px;
+    }
+    .title {
+        font-size: 20pt;
+    }
+}
+@media (max-width:768px) {
+    .price-bold{
+        font-size: 12pt;
+    }
+    .sub-item-option-price{
+        padding: 10px 5px;
+    }
+    .text-option-chil{
+        font-size: 5pt;
+        text-align: center;
+    }
+    .cusnumber {
+        font-size: 15pt;
+    }
+    .sub-button-footer-option{
+        width: 70%;
+    }
+    .text-button-logo-girl{
+        font-size: 5pt;
+    }
+    .name-logo-girl {
+        font-size: 11pt;
+        padding: 5px 0px;
+    }
+    .title-logo-girl{
+        font-size: 6pt;
+    }
+    .sub-item-body-girl-logo {
+        font-size: 6pt;
+    }
+    .item-chil-feedback{
+        font-size: 5pt;
+    }
+    .item-chil-feedback-footer{
+        font-size: 6pt;
+    }
+    .text-size-button-feedback{
+        font-size: 6pt;
+    }
+    .item-chil-feedback-footer{
+        padding: 10px 0px;
+    }
+    .number-item-information{
+        font-size: 20pt;
+    }
+    .text-item-information {
+        font-size: 8pt;
+    }
+    .item-blur{
+        font-size: 6pt;
+    }
+    .blur {
+        padding: 5px 0px;
+        opacity: 0.7;
+    }
+    .sub-chil-name{
+        font-size: 6pt;
+    }
+    .sub-chil-title{
+        font-size: 6pt;
+    }
+    .sub-chil-name{
+        padding: 10px 0px;
+    }
+    .title {
+        font-size: 15pt;
+    }
+}
+@media (max-width:576px) {
+    .cusnumber {
+        font-size: 10pt;
+    }
+    .name-logo-girl {
+        font-size: 8pt;
+        padding: 5px 0px;
+    }
+    .title-logo-girl{
+        font-size: 5pt;
+    }
+    .price-bold{
+        font-size: 8pt;
+    }
+    .sub-option-price {
+        width: 90%;
+    }
+    .sub-button-footer-option{
+        width: 90%;
+    }
+    .text-option-chil{
+        font-size: 4pt;
+        text-align: center;
+    }
+    .text-button-logo-girl{
+        font-size: 3pt;
+    }
+    .sub-item-body-girl-logo {
+        font-size: 4pt;
+    }
+    .cus-sub-item-body-food-logo {
+        font-size: 5pt;
+        font-weight: 600;
+    }
+    .number-item-information{
+        font-size: 15pt;
+    }
+    .text-item-information {
+        font-size: 6pt;
+    }
+    .item-blur{
+        font-size: 4pt;
+    }
+    .blur {
+        padding: 0px 0px;
+        opacity: 0.7;
+    }
+    .name-bold {
+        font-size: 8pt;
+        padding: 0px 0px;
+    }
+    .sub-chil-name{
+        font-size: 4pt;
+    }
+    .sub-chil-title{
+        font-size: 4pt;
+    }
+    .title {
+        font-size: 10pt;
+        font-weight: 900;
+    }
+}
+@media (max-width:400px) {
+    .left-logo-girl {
+        width: 100%;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+    .right-logo-girl {
+        width: 100%;
+    }
+    .footer-body-girl-logo {
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    .cus-sub-item-body-food-logo {
+        font-size: 3pt;
+        font-weight: 600;
+    }
+    .item-img-food {
+        width: 100%;
+    }
+    .top-item-food-img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-item-food-img{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-body-food-logo {
+        width: 100%;
+        padding: 20px 20px;
+    }
+    .item-body-food-logo {
+        width: 80%
+    }
+    .feedback-content {
+        width: 70%;
+        padding: 100px 0px;
+    }
+    .chil-item-information {
+        width: 100%;
+        padding: 20px 0px;
+        text-align: center;
+    }
+    .chil-sub-information{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .item-option-price {
+        width: 100%;
+        padding:20px;
+    }
+    .name-sub-option-price {    
+      flex-direction: column;
+    }
+    .sub-button-footer-option{
+        width: 20%;
+    }
+    .name-bold {
+        font-size: 12pt;
+        padding: 0px 0px;
+    }
+    .item-blur{
+        font-size: 6pt;
+    }
+    .sub-chil{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .chil-body-menu{
+        flex-direction: column;
+    }
+    .sub-chil-name{
+        font-size: 8pt;
+        font-weight: 600;
+    }
+    .sub-chil-title{
+        font-size: 8pt;
+        font-weight: 600;
+    }
+    .sub-chil-name{
+        padding: 20px 0px;
+    }
+    .sub-chil-item{
+        padding: 30px 0px;
+    }
+}
+
+
+

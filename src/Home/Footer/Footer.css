@@ -1,0 +1,89 @@
+.footer{
+    width: 100%;
+    background: #212021;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.footer-body{
+    width: 60%;
+}
+.title-top-footer{
+    font-size: 52pt;
+    font-weight: 600;
+}
+.title-bot-footer{
+    font-size: 30pt;
+    font-weight: 600;
+}
+.sub-footer-body{
+    padding: 50px 0px;
+    text-align: center;
+}
+.logo-footer-brand{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-footer-brand-sub{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+@media (max-width:1200px) {
+    .title-top-footer{
+        font-size: 40pt;
+    }
+    .title-bot-footer{
+        font-size: 25pt;
+        font-weight: 600;
+    }
+}
+@media (max-width:992px) {
+    .title-top-footer{
+        font-size: 30pt;
+    }
+    .title-bot-footer{
+        font-size: 18pt;
+        font-weight: 600;
+    }
+
+}
+@media (max-width:768px) {
+    .title-top-footer{
+        font-size: 25pt;
+    }
+    .title-bot-footer{
+        font-size: 14pt;
+        font-weight: 600;
+    }
+   
+}
+@media (max-width:576px) {
+    .title-top-footer{
+        font-size: 20pt;
+    }
+    .title-bot-footer{
+        font-size: 10pt;
+        font-weight: 600;
+    }
+
+}
+@media (max-width:400px) {
+    .footer-body{
+        width: 100%;
+    }
+    .title-top-footer{
+        font-size: 20pt;
+    }
+    .title-bot-footer{
+        font-size: 10pt;
+        font-weight: 600;
+    }
+    .sub-footer-body{
+        width: 100%;
+    }
+}
