@@ -299,31 +299,49 @@ export function Banner() {
               <div className="name-top-slideshow">Satisfied clients</div>
               <div className="title-top-slideshow">Our Happy Clients</div>
             </div>
-            <div className="footer-slideshow">
-              <div className="slideshow-item">
-                <div className="item-slides">
-                  <img src={Slideshow5} style={{ width: "100%" }} />
-                </div>
-                <div className="item-slides">
-                  <img src={Slideshow1} style={{ width: "100%" }} />
-                </div>
-                <div className="item-slides">
-                  <img src={Slideshow2} style={{ width: "100%" }} />
-                </div>
-                <div className="item-slides">
-                  <img src={Slideshow3} style={{ width: "100%" }} />
-                </div>
-                <div className="item-slides">
-                  <img src={Slideshow4} style={{ width: "100%" }} />
-                </div>
-                <div className="item-slides">
-                  <img src={Slideshow5} style={{ width: "100%" }} />
+            <marquee
+              direction=""
+              onmouseover="this.stop();"
+              onmouseout="this.start();"
+            >
+              <div className="footer-slideshow">
+                <div className="slideshow-item">
+                  <div className="item-slides">
+                    <img src={Slideshow5} style={{ width: "100%" }} />
+                  </div>
+                  <div className="item-slides">
+                    <img src={Slideshow1} style={{ width: "100%" }} />
+                  </div>
+                  <div className="item-slides">
+                    <img src={Slideshow2} style={{ width: "100%" }} />
+                  </div>
+                  <div className="item-slides">
+                    <img src={Slideshow3} style={{ width: "100%" }} />
+                  </div>
+                  <div className="item-slides">
+                    <img src={Slideshow4} style={{ width: "100%" }} />
+                  </div>
+                  <div className="item-slides">
+                    <img src={Slideshow5} style={{ width: "100%" }} />
+                  </div>
                 </div>
               </div>
-            </div>
+            </marquee>
           </div>
         </div>
       </div>
+      {/* <div className="contact">
+        <div className="tower">
+          <div className="title-top-contact">GET IN TOUCH</div>
+        </div>
+        <div>1</div>
+        <div className="body-contact">
+          <div className="left-body-contact">1</div>
+          <div className="right
+          
+          -body-contact">1</div>
+        </div>
+      </div> */}
     </div>
   );
 }
