@@ -269,6 +269,20 @@ justify-content: space-around;
     display: flex;
     width: 30%;
 }
+/* .tower{
+    background: url("../../../asset/img/tower.png");
+}
+.title-top-contact{
+    padding: 100px 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.body-contact{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+} */
 @media (max-width:1824px) {
     .price-bold{
         font-size: 25pt;
@@ -351,12 +365,8 @@ justify-content: space-around;
     .text-item-information {
         font-size: 12pt;
     }
-    .sub-chil-name{
-        font-size: 10pt;
-    }
-    .sub-chil-title{
-        font-size: 10pt;
-    }
+  
+   
     .title {
         font-size: 25pt;
     }
@@ -424,12 +434,8 @@ justify-content: space-around;
         padding: 10px 0px;
         opacity: 0.7;
     }
-    .sub-chil-name{
-        font-size: 8pt;
-    }
-    .sub-chil-title{
-        font-size: 8pt;
-    }
+
+   
     .sub-chil-item {
         padding: 20px 0px;
     }
@@ -492,15 +498,8 @@ justify-content: space-around;
         padding: 5px 0px;
         opacity: 0.7;
     }
-    .sub-chil-name{
-        font-size: 6pt;
-    }
-    .sub-chil-title{
-        font-size: 6pt;
-    }
-    .sub-chil-name{
-        padding: 10px 0px;
-    }
+   
+ 
     .title {
         font-size: 15pt;
     }
@@ -556,12 +555,8 @@ justify-content: space-around;
         font-size: 8pt;
         padding: 0px 0px;
     }
-    .sub-chil-name{
-        font-size: 4pt;
-    }
-    .sub-chil-title{
-        font-size: 4pt;
-    }
+ 
+   
     .title {
         font-size: 10pt;
         font-weight: 900;
@@ -644,17 +639,7 @@ justify-content: space-around;
     .chil-body-menu{
         flex-direction: column;
     }
-    .sub-chil-name{
-        font-size: 8pt;
-        font-weight: 600;
-    }
-    .sub-chil-title{
-        font-size: 8pt;
-        font-weight: 600;
-    }
-    .sub-chil-name{
-        padding: 20px 0px;
-    }
+  
     .sub-chil-item{
         padding: 30px 0px;
     }

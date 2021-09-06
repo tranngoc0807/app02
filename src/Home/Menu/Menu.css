@@ -379,6 +379,12 @@
     .name-top-title-phone-item{
         font-size: 14pt;
     }
+    .sub-chil-name{
+        font-size: 10pt;
+    }
+    .sub-chil-title{
+        font-size: 10pt;
+    }
 }
 @media (max-width:992px) {
     .title-progress-item {
@@ -426,6 +432,12 @@
     }
     .name-top-title-phone-item{
         font-size: 12pt;
+    }
+    .sub-chil-name{
+        font-size: 8pt;
+    }
+    .sub-chil-title{
+        font-size: 8pt;
     }
 }
 @media (max-width:768px) {
@@ -477,6 +489,13 @@
     }
     .name-top-title-phone-item{
         font-size: 10pt;
+    }
+    .sub-chil-name{
+        font-size: 6pt;
+        padding: 10px 0px;
+    }
+    .sub-chil-title{
+        font-size: 6pt;
     }
 }
 @media (max-width:576px) {
@@ -532,9 +551,17 @@
     .name-top-title-phone-item{
         font-size: 8pt;
     }
-    
+    .sub-chil-name{
+        font-size: 6pt;
+    }
+    .sub-chil-title{
+        font-size: 4pt;
+    }
 }
 @media (max-width:400px) {
+    .sub-chil-name{
+        font-size: 8pt;
+    }
     .left-progressbar {
         width: 100%;
         padding: 0px 10px 0px 0px;
@@ -584,5 +611,22 @@
     }
     .sub-footer-title-phone-item{
         flex-direction: column;
+    }
+    .sub-chil-title{
+        font-size: 8pt;
+        font-weight: 600;
+    }
+    .font-text {
+        font-size: 8pt;
+    }
+    .title-font-text {
+        font-size: 6pt;
+    }
+    .text-item-body-left-post {
+        font-size: 6pt;
+
+    }
+    .title-banner-item-top {
+        font-size: 6pt;
     }
 }

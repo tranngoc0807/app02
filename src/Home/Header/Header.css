@@ -104,6 +104,10 @@
 @media (max-width:400px) {
     .chil-header {
         width: 90%;
+        padding: 70px 0px;
+    }
+    .body-sub-header{
+        font-size: 8pt;
     }
     .sub-header {
         width: 60%;
