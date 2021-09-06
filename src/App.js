@@ -3,7 +3,7 @@ import Home from "./Home/Home";
 export function App() {
   return (
     <div>
-      <Home a'' />
+      <Home/>
     </div>
   );
 }
