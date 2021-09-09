@@ -85,13 +85,43 @@
     width: 100%;
 }
 .cus-sub-item-body-food-logo.one{
+    position: relative;
     text-align: center;
     background: #ff517b;
+    
+}
+.sub-menu-dropdown {
+    display: none;
+    background: #ff517b;
+}
+.name-item-food-logo .sub-item-body-food-logo:hover .sub-menu-dropdown{
+    display:block;
+    position: absolute;
+    width: 100%;
+}
+.chil-menu-dropdown{
+    width: 80%;
+}
+.name-item-food-logo:hover .sub-menu-dropdown .chil-menu-dropdown {
+    display: block;
+    margin: 10px;
+}
+
+.sub-menu-dropdown .chil-menu-dropdown li{
+    width: 100%;
+    display: flex;
+    padding: 10px 0px;
+    list-style-type: none;
+    border-bottom: 1px solid #fff;
+}
+.sub-menu-dropdown .chil-menu-dropdown li:hover {
+    color: white;
 }
 .sub-item-body-food-logo{
     width: 25%;
 }
 .cus-sub-item-body-food-logo{
+    cursor: pointer;
     width: 100%;
     padding: 10px 0px;
     border-radius: 10px;
@@ -474,10 +504,12 @@ justify-content: space-around;
         font-size: 6pt;
     }
     .item-chil-feedback{
-        font-size: 5pt;
+        font-size: 7pt;
+        font-weight: 800;
     }
     .item-chil-feedback-footer{
-        font-size: 6pt;
+        font-size: 10pt;
+        font-weight: 600;
     }
     .text-size-button-feedback{
         font-size: 6pt;
@@ -506,10 +538,12 @@ justify-content: space-around;
 }
 @media (max-width:576px) {
     .cusnumber {
-        font-size: 10pt;
+        font-size: 15pt;
+        font-weight: 800;
     }
     .name-logo-girl {
-        font-size: 8pt;
+        font-size: 10pt;
+        font-weight: 800;
         padding: 5px 0px;
     }
     .title-logo-girl{
@@ -579,8 +613,8 @@ justify-content: space-around;
         background: white;
     }
     .cus-sub-item-body-food-logo {
-        font-size: 3pt;
-        font-weight: 600;
+        font-size: 5pt;
+        font-weight: 900;
     }
     .item-img-food {
         width: 100%;
@@ -626,11 +660,12 @@ justify-content: space-around;
         width: 20%;
     }
     .name-bold {
-        font-size: 12pt;
+        font-size: 15pt;
         padding: 0px 0px;
     }
     .item-blur{
-        font-size: 6pt;
+        font-size: 7pt;
+        font-weight: 800;
     }
     .sub-chil{
         width: 100%;
@@ -642,6 +677,25 @@ justify-content: space-around;
   
     .sub-chil-item{
         padding: 30px 0px;
+    }
+    .item-body-girl-logo {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .sub-item-body-girl-logo {
+        font-size: 5pt;
+        font-weight: 900;
+    }
+    .title-logo-girl {
+        font-size: 6pt;
+        font-weight: 900;
+    }
+    .price-bold{
+        font-size: 12pt;
+    }
+    .text-item-information {
+     font-size: 15pt;
     }
 }
 

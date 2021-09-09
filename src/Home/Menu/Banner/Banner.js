@@ -1,4 +1,5 @@
 import "../Banner/Banner.css";
+import { useState, useEffect } from "react";
 import Food from "../../../asset/img/food.png";
 import Food1 from "../../../asset/img/food1.png";
 import Food2 from "../../../asset/img/food2.png";
@@ -9,15 +10,64 @@ import Food6 from "../../../asset/img/food6.png";
 import Food7 from "../../../asset/img/food7.png";
 import Man from "../../../asset/img/man.png";
 import Contact from "../../../asset/img/contact.png";
-import Colum from "../../../asset/img/colum.png";
 import Slideshow1 from "../../../asset/img/slideshow1.png";
 import Slideshow2 from "../../../asset/img/slideshow2.png";
 import Slideshow3 from "../../../asset/img/slideshow3.png";
 import Slideshow4 from "../../../asset/img/slideshow4.png";
 import Slideshow5 from "../../../asset/img/slideshow5.png";
 import Bannergirl from "../../../asset/img/bannergirl.png";
-import { Col } from "antd";
+import { Row, Col } from "reactstrap";
 export function Banner() {
+  const fakeData = [
+    {
+      id: 1,
+      logo: Food,
+      name: "Marketing",
+    },
+    {
+      id: 2,
+      logo: Food1,
+      name: "Graphics",
+    },
+    {
+      id: 3,
+      logo: Food2,
+      name: "Marketing",
+    },
+    {
+      id: 4,
+      logo: Food3,
+      name: "Graphics",
+    },
+    {
+      id: 5,
+      logo: Food4,
+      name: "Web Design",
+    },
+    {
+      id: 6,
+      logo: Food5,
+      name: "Marketing",
+    },
+    {
+      id: 7,
+      logo: Food6,
+      name: "Web Design",
+    },
+    {
+      id: 8,
+      logo: Food7,
+      name: "Graphics",
+    },
+  ];
+  let [products, setProducts] = useState([])
+  const handleFilterName = (filterName) => {
+    const listArrays = filterName ? fakeData.filter((i) => i.name ===filterName ): fakeData;
+    setProducts(listArrays);
+  };
+  function isEmpty(obj) {
+    return Object.keys(obj).length === 0;
+  }
   return (
     <div>
       <div className="girl-logo">
@@ -51,7 +101,7 @@ export function Banner() {
                   <div className="sub-button-footer-logo-girl">
                     <button
                       type="button"
-                      class="btn btn-danger"
+                      className="btn btn-danger"
                       style={{ borderRadius: "20px", width: "100%" }}
                     >
                       <div className="text-button-logo-girl">GET IN TOUCH</div>
@@ -70,49 +120,52 @@ export function Banner() {
               <div className="name-item-food-logo">
                 <div className="sub-item-body-food-logo">
                   <div className="cus-sub-item-body-food-logo one">
+                  <button onClick={() => handleFilterName("")}>
                     All Projects
+                    </button>
+                   
+                    
                   </div>
                 </div>
                 <div className="sub-item-body-food-logo">
-                  <div className="cus-sub-item-body-food-logo ">Graphics</div>
+                  <div className="cus-sub-item-body-food-logo ">
+                    <button onClick={() => handleFilterName("Graphics")}>
+                      Graphics
+                    </button>
+                  </div>
                 </div>
                 <div className="sub-item-body-food-logo">
-                  <div className="cus-sub-item-body-food-logo ">Web Design</div>
+                  <div className="cus-sub-item-body-food-logo ">
+                    <button onClick={() => handleFilterName("Web Design")}>
+                      {" "}
+                      Web Design
+                    </button>
+                  </div>
                 </div>
                 <div className="sub-item-body-food-logo">
-                  <div className="cus-sub-item-body-food-logo ">Marketing</div>
+                  <div className="cus-sub-item-body-food-logo ">
+                    <button onClick={() => handleFilterName("Marketing")}>
+                      {" "}
+                      Marketing
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div className="footer-body-food-logo">
             <div className="top-item-food-img">
-              <div className="item-img-food">
-                <img src={Food} style={{ width: "100%" }} />
-              </div>
-              <div className="item-img-food">
-                <img src={Food1} style={{ width: "100%" }} />
-              </div>
-              <div className="item-img-food">
-                <img src={Food2} style={{ width: "100%" }} />
-              </div>
-              <div className="item-img-food">
-                <img src={Food3} style={{ width: "100%" }} />
-              </div>
-            </div>
-            <div className="footer-item-food-img">
-              <div className="item-img-food">
-                <img src={Food4} style={{ width: "100%" }} />
-              </div>
-              <div className="item-img-food">
-                <img src={Food5} style={{ width: "100%" }} />
-              </div>
-              <div className="item-img-food">
-                <img src={Food6} style={{ width: "100%" }} />
-              </div>
-              <div className="item-img-food">
-                <img src={Food7} style={{ width: "100%" }} />
-              </div>
+              <Row>
+                {products.map((product, index) => (
+                  <div className="item-img-food">
+                    <img
+                      style={{ width: "100%", padding: "15px 0px" }}
+                      src={product.logo}
+                    ></img>
+                  </div>
+                ))}
+              </Row>
             </div>
           </div>
         </div>
@@ -274,7 +327,7 @@ export function Banner() {
             <div className="chil-item-information">
               <div>
                 <div style={{ width: "100%" }}>
-                  <img src={Colum} style={{ width: "50%" }} />
+                  <img src={Contact} style={{ width: "50%" }} />
                 </div>
               </div>
               <div className="number-item-information">990</div>
@@ -283,7 +336,7 @@ export function Banner() {
             <div className="chil-item-information">
               <div>
                 <div style={{ width: "100%" }}>
-                  <img src={Colum} style={{ width: "50%" }} />
+                  <img src={Contact} style={{ width: "50%" }} />
                 </div>
               </div>
               <div className="number-item-information">1232</div>
