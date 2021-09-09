@@ -485,7 +485,7 @@
         padding: 10px 0px;
      }
      .detail-top-title-phone-item{
-        font-size: 6pt;
+        font-size: 8pt;
     }
     .name-top-title-phone-item{
         font-size: 10pt;
@@ -500,11 +500,11 @@
 }
 @media (max-width:576px) {
     .title-progress-item {
-        font-size: 8pt;
+        font-size: 10pt;
         font-weight: 600;
     }
     .text-top-left-post{
-        font-size: 8pt;
+        font-size: 10pt;
        font-weight: 600;
     }
     .text-item-body-left-post{
@@ -540,7 +540,8 @@
         font-size: 6pt;
     }
     .text-size-phone-contact{
-        font-size: 3pt;
+        font-size: 3t;
+        font-weight: 600;
     }
     .top-contact{
         padding: 5px 0px;
@@ -549,7 +550,8 @@
         font-size: 6pt;
     }
     .name-top-title-phone-item{
-        font-size: 8pt;
+        font-size: 10pt;
+        font-weight: 800;
     }
     .sub-chil-name{
         font-size: 6pt;
@@ -617,7 +619,7 @@
         font-weight: 600;
     }
     .font-text {
-        font-size: 8pt;
+        font-size: 10pt;
     }
     .title-font-text {
         font-size: 6pt;
@@ -629,4 +631,20 @@
     .title-banner-item-top {
         font-size: 6pt;
     }
+    .text-size-phone-contact {
+        font-weight: 600;
+        font-size: 7pt;
+    }
+    .title-top-contact {
+        font-size: 10pt;
+        font-weight: 800;
+    }
+    .chil-item-sub-phone {
+        width: 90%;
+        padding: 20px 0px;
+    }
+    .body-phone-item {
+        padding: 50px 0px 0px 0px;
+    }
+ 
 }
