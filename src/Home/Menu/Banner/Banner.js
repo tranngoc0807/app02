@@ -60,11 +60,16 @@ export function Banner() {
       name: "Graphics",
     },
   ];
-  let [products, setProducts] = useState([])
+  let [products, setProducts] = useState([]);
   const handleFilterName = (filterName) => {
-    const listArrays = filterName ? fakeData.filter((i) => i.name ===filterName ): fakeData;
+    const listArrays = filterName
+      ? fakeData.filter((i) => i.name === filterName)
+      : fakeData;
     setProducts(listArrays);
   };
+  useEffect(() => {
+    setProducts(fakeData);
+  }, []);
   function isEmpty(obj) {
     return Object.keys(obj).length === 0;
   }
@@ -120,11 +125,9 @@ export function Banner() {
               <div className="name-item-food-logo">
                 <div className="sub-item-body-food-logo">
                   <div className="cus-sub-item-body-food-logo one">
-                  <button onClick={() => handleFilterName("")}>
-                    All Projects
+                    <button onClick={() => handleFilterName("")}>
+                      All Projects
                     </button>
-                   
-                    
                   </div>
                 </div>
                 <div className="sub-item-body-food-logo">
