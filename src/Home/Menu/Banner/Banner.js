@@ -62,6 +62,7 @@ export function Banner() {
   ];
   let [products, setProducts] = useState([]);
   const handleFilterName = (filterName) => {
+   
     const listArrays = filterName
       ? fakeData.filter((i) => i.name === filterName)
       : fakeData;
@@ -125,30 +126,28 @@ export function Banner() {
               <div className="name-item-food-logo">
                 <div className="sub-item-body-food-logo">
                   <div className="cus-sub-item-body-food-logo one">
-                    <button onClick={() => handleFilterName("")}>
+                    <button onClick={() => handleFilterName("")} style={{borderRadius:'5px'}} >
                       All Projects
                     </button>
                   </div>
                 </div>
                 <div className="sub-item-body-food-logo">
                   <div className="cus-sub-item-body-food-logo ">
-                    <button onClick={() => handleFilterName("Graphics")}>
+                    <button onClick={() => handleFilterName("Graphics")} style={{borderRadius:'5px'}}>
                       Graphics
                     </button>
                   </div>
                 </div>
                 <div className="sub-item-body-food-logo">
                   <div className="cus-sub-item-body-food-logo ">
-                    <button onClick={() => handleFilterName("Web Design")}>
-                      {" "}
+                    <button onClick={() => handleFilterName("Web Design")} style={{borderRadius:'5px'}}>
                       Web Design
                     </button>
                   </div>
                 </div>
                 <div className="sub-item-body-food-logo">
                   <div className="cus-sub-item-body-food-logo ">
-                    <button onClick={() => handleFilterName("Marketing")}>
-                      {" "}
+                    <button onClick={() => handleFilterName("Marketing")} style={{borderRadius:'5px'}}>
                       Marketing
                     </button>
                   </div>
@@ -159,7 +158,7 @@ export function Banner() {
 
           <div className="footer-body-food-logo">
             <div className="top-item-food-img">
-              <Row>
+              <Row style={{width:'100%'}}>
                 {products.map((product, index) => (
                   <div className="item-img-food">
                     <img
