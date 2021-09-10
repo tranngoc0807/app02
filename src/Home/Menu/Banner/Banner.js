@@ -16,63 +16,81 @@ import Slideshow3 from "../../../asset/img/slideshow3.png";
 import Slideshow4 from "../../../asset/img/slideshow4.png";
 import Slideshow5 from "../../../asset/img/slideshow5.png";
 import Bannergirl from "../../../asset/img/bannergirl.png";
-import { Row, Col } from "reactstrap";
+import { Row } from "reactstrap";
+
+const Category = [
+  { id: -1, name: 'All Products' },
+  { id: 2, name: 'Marketing' },
+  { id: 3, name: 'Graphics' },
+  { id: 4, name: 'Web Design' }
+]
 export function Banner() {
   const fakeData = [
     {
       id: 1,
       logo: Food,
       name: "Marketing",
+    category: 2,
     },
     {
       id: 2,
       logo: Food1,
       name: "Graphics",
+      category: 3,
     },
     {
       id: 3,
       logo: Food2,
       name: "Marketing",
+      category: 2,
     },
     {
       id: 4,
       logo: Food3,
       name: "Graphics",
+      category: 3,
     },
     {
       id: 5,
       logo: Food4,
       name: "Web Design",
+      category: 4,
     },
     {
       id: 6,
       logo: Food5,
       name: "Marketing",
+      category: 2,
     },
     {
       id: 7,
       logo: Food6,
       name: "Web Design",
+      category: 4,
     },
     {
       id: 8,
       logo: Food7,
       name: "Graphics",
+      category: 3,
     },
   ];
   let [products, setProducts] = useState([]);
-  const handleFilterName = (filterName) => {
-    const listArrays = filterName
-      ? fakeData.filter((i) => i.name === filterName)
+  let [activeLink, setActiveLink] = useState(-1);
+
+  const handleFilterName = (id) => {
+    setActiveLink(id)
+    const listArrays = id !== -1
+      ? fakeData.filter((i) => i.category === id)
       : fakeData;
     setProducts(listArrays);
   };
+
   useEffect(() => {
     setProducts(fakeData);
   }, []);
-  function isEmpty(obj) {
-    return Object.keys(obj).length === 0;
-  }
+
+
   return (
     <div>
       <div className="girl-logo">
@@ -123,43 +141,25 @@ export function Banner() {
           <div className="top-body-food-logo">
             <div className="item-body-food-logo">
               <div className="name-item-food-logo">
-                <div className="sub-item-body-food-logo">
-                  <div className="cus-sub-item-body-food-logo one">
-                    <button onClick={() => handleFilterName("")}>
-                      All Projects
-                    </button>
-                  </div>
-                </div>
-                <div className="sub-item-body-food-logo">
-                  <div className="cus-sub-item-body-food-logo ">
-                    <button onClick={() => handleFilterName("Graphics")}>
-                      Graphics
-                    </button>
-                  </div>
-                </div>
-                <div className="sub-item-body-food-logo">
-                  <div className="cus-sub-item-body-food-logo ">
-                    <button onClick={() => handleFilterName("Web Design")}>
-                      {" "}
-                      Web Design
-                    </button>
-                  </div>
-                </div>
-                <div className="sub-item-body-food-logo">
-                  <div className="cus-sub-item-body-food-logo ">
-                    <button onClick={() => handleFilterName("Marketing")}>
-                      {" "}
-                      Marketing
-                    </button>
-                  </div>
-                </div>
+                {Category.map(({ id, name }) => {
+                  return (
+                    <div className="sub-item-body-food-logo">
+                      <div className={id === activeLink ?
+                        ' _active cus-sub-item-body-food-logo' :
+                        'cus-sub-item-body-food-logo'} onClick={() =>
+                          handleFilterName(id)} style={{ borderRadius: '5px' }}>
+                        {name}
+                      </div>
+                    </div>)
+                })}
+
               </div>
             </div>
           </div>
 
           <div className="footer-body-food-logo">
             <div className="top-item-food-img">
-              <Row>
+              <Row style={{ width: '100%' }}>
                 {products.map((product, index) => (
                   <div className="item-img-food">
                     <img
